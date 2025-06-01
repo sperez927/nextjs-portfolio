@@ -86,7 +86,7 @@ export const heroData: Hero = {
   ),
   actions: [
     {
-      href: 'https://drive.google.com/drive/folders/1fhwRNQT9nAn4m7qmhIQHCAkaVwYA6RVI',
+      href: 'https://drive.google.com/file/d/1xj3Bnj76Raw54P8NgIMXW1Z0nsjjWBA_/view?usp=sharing',
       text: 'Resume',
       primary: true,
       Icon: ArrowDownTrayIcon,
