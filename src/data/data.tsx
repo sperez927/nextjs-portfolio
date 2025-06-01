@@ -309,7 +309,7 @@ export const testimonial: TestimonialSection = {
   imageSrc: testimonialImage,
   testimonials: [
     {
-      name: 'John Michael',
+      name: 'CMO',
       text: 'Salvador Perez helped us design and launch a fully responsive e-commerce platform that increased our online sales by over 40%. They were clear in communication, delivered on time, and made smart technical decisions that kept us under budget. I’ve worked with many developers — few are as professional, skilled, and easy to work with as them.',
       // image: 'https://drive.google.com/file/d/1dXMZHOvZxJXwjc3Q-lXpRGp0iVyALmHV/view?usp=sharing',
       image: reviewerImage1
