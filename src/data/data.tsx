@@ -315,7 +315,7 @@ export const testimonial: TestimonialSection = {
       image: reviewerImage1
     },
     {
-      name: 'Adrian Madrid',
+      name: 'Director of Enginner',
       text: "Salvador Perez is one of the most dependable and skilled web developers I’ve worked with in my career. Their 10+ years of experience really shows — whether it's building responsive UIs, optimizing performance, or solving tricky backend issues, they get it done right and on time.",
       // image: 'https://drive.google.com/file/d/15hKY0V4KfjOAZpZK5Eq6t8217p50bqKa/view?usp=sharing',
       image: reviewerImage2
