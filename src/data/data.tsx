@@ -232,7 +232,7 @@ export const portfolioItems: PortfolioItem[] = [
 
 export const education: TimelineItem[] = [
   {
-    date: 'April 2014',
+    date: 'May 2012',
     location: 'Richardson, TX',
     title: 'University of Texas at Dallas',
     content: <p>I earned a Bachelor's degree in Computer Science from the University of Texas at Dallas, where I built a strong foundation in programming, web development, and core concepts like data structures, algorithms, and database design.</p>
