@@ -85,7 +85,7 @@ export const heroData: Hero = {
   ),
   actions: [
     {
-      href: 'https://drive.google.com/file/d/1ABvZrzsF6aGbYfYYHV0Uu6f2QVTfaCPM/view?usp=sharing',
+      href: 'https://drive.google.com/file/d/1nacZd1PkQcFtm2semalj-UKs3LIUNhoB/view?usp=sharing',
       text: 'Resume',
       primary: true,
       Icon: ArrowDownTrayIcon,
@@ -389,6 +389,6 @@ export const socialLinks: Social[] = [
   {label: 'Github', Icon: GithubIcon, href: 'https://github.com/sperez927'},
   {label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://stackoverflow.com/users/22875671/SmartDev'},
   {label: 'Dev Community', Icon: DevCommunityIcon, href: 'https://dev.to/sperez927'},
-  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/salvador-perez-346a852a2/'},
+  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/salvador-perez-20470b20'},
   {label: 'Twitter', Icon: TwitterIcon, href: 'https://x.com/salverez90'},
 ];
