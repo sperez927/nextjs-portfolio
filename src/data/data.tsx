@@ -104,11 +104,12 @@ export const heroData: Hero = {
  */
 export const aboutData: About = {
   profileImageSrc: profilepic,
-  description: `Senior Full Stack Software Engineer with 10+ years of experience building scalable web applications
-using the MERN stack, JavaScript, and AWS. Skilled in delivering intuitive UIs, optimizing backend
-performance, and translating business goals into efficient, secure solutions. I value clarity,
-consistency, and impact in both code and collaboration, and continuously refine solutions through
-feedback and iteration.`,
+  description: `Senior Full Stack Software Engineer with 10+ years of experience building modern, scalable, and
+AI-augmented web applications across diverse industries. Specialized in React, Node.js, and cloud
+platforms with a proven ability to integrate AI solutions (chatbots, GPT APIs, data pipelines) to
+enhance user experience and system intelligence. Expert at adapting quickly across projects,
+collaborating with cross-functional teams, and delivering high-impact results in both consulting
+and full-time roles`,
   aboutItems: [
     { label: 'Location', text: 'Odessa, TX, 79762', Icon: MapIcon },
     { label: 'Age', text: '35', Icon: CalendarIcon },
@@ -178,7 +179,7 @@ export const skills: SkillGroup[] = [
     name: 'Other',
     skills: [
       {
-        name: 'React Native',
+        name: 'AI',
         level: 9,
       },
       {
@@ -246,7 +247,7 @@ export const experience: TimelineItem[] = [
     title: 'Senior Full Stack Software Engineer',
     content: (
       <p>
-        Developed and optimized full-stack web applications with a strong focus on React and Next.js, including real-time dashboards, secure form systems, and messaging tools—leveraging supporting technologies like Node.js, Django, and Redis to ensure performance, scalability, and responsive UI.
+        Developed and delivered a wide range of full-stack applications in a consulting capacity, including AI-powered HR systems, e-learning platforms, real-time dashboards, and secure multi-step forms — using React, Next.js, Node.js, Java, Django, and Redis. Emphasized performance, scalability, and cloud-native deployment across projects using AWS Lambda, PostgreSQL, and OpenAI API integrations.
       </p>
     ),
   },
@@ -256,7 +257,7 @@ export const experience: TimelineItem[] = [
     title: 'Senior Full Stack Software Engineer',
     content: (
       <p>
-        Built and deployed scalable full-stack features using React, Node.js, and AWS, with secure auth, optimized queries, and CI/CD pipelines across Docker and Kubernetes.
+        Led development of scalable e-commerce features using React, Node.js, and AWS — including secure product catalog APIs, JWT-based auth, Stripe/PayPal payments, and OpenAI-driven SEO tagging. Streamlined CI/CD with CodePipeline and deployed containers via OpenShift and Docker.
       </p>
     ),
   },
@@ -266,7 +267,7 @@ export const experience: TimelineItem[] = [
     title: ' Lead Frontend Engineer',
     content: (
       <p>
-        Led key web projects using Next.js, Angular, and Spring Boot, improving performance, SEO, and user experience while integrating APIs like PayPal and Google Maps to streamline event and camp management platforms.
+        Migrated legacy systems to Next.js and Angular, improving page load times by 40% and SEO performance. Built UI and event tools for national council platforms and camp management platforms, integrated APIs like Google Maps, Calendar, and PayPal, and supported Spring Boot-based backend with MySQL.
       </p>
     ),
   },
@@ -276,7 +277,7 @@ export const experience: TimelineItem[] = [
     title: 'Full Stack Developer',
     content: (
       <p>
-        Developed a scalable healthcare web app with React, Django, and PostgreSQL, improving real-time communication via socket.io and optimizing database performance through efficient schema design and indexing.
+        Delivered multiple healthcare and data platforms in a consulting role, building real-time dashboards and secure messaging with React, Django, PostgreSQL, and Redis-backed socket.io. Developed alerting and monitoring tools using Kafka and REST APIs, driven by live metrics and rule-based logic.
       </p>
     ),
   },
@@ -296,7 +297,7 @@ export const experience: TimelineItem[] = [
     title: 'Full Stack Freelancer',
     content: (
       <p>
-        Experienced in building scalable web and backend systems using technologies like jQuery, Metronic, C# (N-tier), Spring Boot with Kafka, and GCP BigQuery for data-driven insights.
+        Built custom dashboards and full-stack systems for small businesses using jQuery, Backbone.js, C# (N-tier architecture), and Spring Boot with Kafka. Developed cloud-based reporting pipelines using GCP BigQuery for scalable analytics and automation.
       </p>
     ),
   }
