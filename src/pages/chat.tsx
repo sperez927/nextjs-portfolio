@@ -1,8 +1,13 @@
 import { useState } from 'react'
 
+type Message = {
+  role: 'user' | 'ai'
+  content: string
+}
+
 export default function ChatPage() {
-  const [messages, setMessages] = useState([
-    { role: 'ai', content: 'Hi—ask me anything about my resume or projects!' }
+  const [messages, setMessages] = useState<Message[]>([
+    { role: 'ai', content: "Hi — ask me anything about my work or projects!" },
   ])
   const [input, setInput] = useState('')
 
@@ -17,35 +22,36 @@ export default function ChatPage() {
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ question }),
     })
-    const { answer } = await res.json()
-    setMessages((prev) => [...prev, { role: 'ai', content: answer }])
+
+    const data = await res.json()
+    setMessages((prev) => [...prev, { role: 'ai', content: data.answer }])
   }
 
   return (
     <div className="max-w-2xl mx-auto p-6">
-      <h1 className="text-2xl font-bold mb-4">Ask Me About My Portfolio</h1>
-      <div className="mb-4 space-y-2">
+      <h1 className="text-2xl font-bold mb-4">Ask Me About My Experience</h1>
+      <div className="space-y-2 mb-4">
         {messages.map((msg, i) => (
           <div
-            key={i}
-            className={`p-3 rounded ${
-              msg.role === 'user' ? 'bg-blue-100 text-right' : 'bg-gray-200'
+            className={`p-2 rounded ${
+              msg.role === 'user' ? 'bg-blue-100 text-right' : 'bg-gray-100'
             }`}
+            key={i}
           >
             <strong>{msg.role === 'user' ? 'You' : 'AI'}:</strong> {msg.content}
           </div>
         ))}
       </div>
-      <div className="flex">
+      <div className="flex gap-2">
         <input
-          value={input}
-          onChange={(e) => setInput(e.target.value)}
           className="flex-1 border rounded px-3 py-2"
+          onChange={(e) => setInput(e.target.value)}
           onKeyDown={(e) => e.key === 'Enter' && handleSend()}
+          value={input}
         />
         <button
+          className="bg-blue-600 text-white px-4 py-2 rounded"
           onClick={handleSend}
-          className="ml-2 bg-blue-600 text-white px-4 py-2 rounded"
         >
           Send
         </button>
