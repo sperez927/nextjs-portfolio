@@ -1,5 +1,5 @@
-import type { NextApiRequest, NextApiResponse } from 'next';
 import { neon } from '@neondatabase/serverless';
+import type { NextApiRequest, NextApiResponse } from 'next';
 
 // Connect to NeonDB using the connection string from the environment
 const sql = neon(process.env.NEON_DATABASE_URL!);
@@ -30,10 +30,14 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
       VALUES (${timestamp}, ${ip}, ${userAgent}, ${language}, ${platform})
     `;
     res.status(200).json({ success: true });
-  } catch (error: any) {
+  } catch (error: unknown) {
     // Log the error for debugging
-    console.error('Failed to log visitor:', error);
-    // Return a clear error message
-    res.status(500).json({ error: error.message || 'Failed to log visitor' });
+    if (error instanceof Error) {
+      console.error('Failed to log visitor:', error);
+      res.status(500).json({ error: error.message || 'Failed to log visitor' });
+    } else {
+      console.error('Failed to log visitor:', error);
+      res.status(500).json({ error: 'Failed to log visitor' });
+    }
   }
 }
