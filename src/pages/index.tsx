@@ -1,5 +1,5 @@
 import dynamic from 'next/dynamic';
-import { FC, memo } from 'react';
+import { FC, memo, useEffect } from 'react';
 
 import Page from '../components/Layout/Page';
 import About from '../components/Sections/About';
@@ -16,6 +16,16 @@ const Header = dynamic(() => import('../components/Sections/Header'), { ssr: fal
 
 const Home: FC = memo(() => {
   const { title, description } = homePageMeta;
+
+  useEffect(() => {
+    console.log('Logging visit to the server');
+    fetch('/api/visit', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ timestamp: new Date().toISOString() })
+    });
+  }, []);
+
   return (
     <Page description={description} title={title}>
       <Header />
