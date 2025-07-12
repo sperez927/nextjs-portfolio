@@ -251,7 +251,7 @@ export const education: TimelineItem[] = [
 
 export const experience: TimelineItem[] = [
   {
-    date: 'September 2021 - May 2025',
+    date: 'September 2021 - March 2026',
     location: 'BairesDev',
     title: 'Senior Full Stack Software Engineer',
     content: (
