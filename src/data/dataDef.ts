@@ -78,8 +78,11 @@ export interface SkillGroup {
  */
 export interface PortfolioItem {
   title: string;
-  description: string;
+  summary: string;
+  bullets: string[];
+  skills: string[];
   url: string;
+  githubUrl?: string;
   image: string | StaticImageData;
 }
 

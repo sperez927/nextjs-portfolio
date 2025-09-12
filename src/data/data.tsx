@@ -20,6 +20,9 @@ import porfolioImage2 from '../images/portfolio/portfolio-2.jpg';
 import porfolioImage3 from '../images/portfolio/portfolio-3.jpg';
 import porfolioImage4 from '../images/portfolio/portfolio-4.jpg';
 import porfolioImage5 from '../images/portfolio/portfolio-5.jpg';
+import porfolioImage6 from '../images/portfolio/portfolio-6.jpg';
+import porfolioImage7 from '../images/portfolio/portfolio-7.jpg';
+import porfolioImage8 from '../images/portfolio/portfolio-8.jpg';
 import profilepic from '../images/profile-logo.png';
 import reviewerImage2 from '../images/reviewers/AdrianMadrid.jpg';
 import reviewerImage1 from '../images/reviewers/JohnMichael.jpg';
@@ -73,7 +76,7 @@ export const heroData: Hero = {
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
         I'm a <strong className="text-stone-100">Full Stack Software Engineer</strong>, currently working as a Senior
-        Freelance Web Developer, with over 10 years of experience building scalable web applications and leading
+        Freelance Web Developer, with over 14 years of experience building scalable web applications and leading
         cross-functional teams.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
@@ -110,12 +113,12 @@ enhance user experience and system intelligence. Expert at adapting quickly acro
 collaborating with cross-functional teams, and delivering high-impact results in both consulting
 and full-time roles`,
   aboutItems: [
-    {label: 'Location', text: 'Odessa, TX, 79762', Icon: MapIcon},
-    {label: 'Age', text: '35', Icon: CalendarIcon},
-    {label: 'Nationality', text: 'United States', Icon: FlagIcon},
-    {label: 'Interests', text: 'Football,  Hiking', Icon: SparklesIcon},
-    {label: 'Study', text: 'University of Texas at Dallas', Icon: AcademicCapIcon},
-    {label: 'Employment', text: 'Self-Employed', Icon: BuildingOffice2Icon},
+    { label: 'Location', text: 'Odessa, TX, 79762', Icon: MapIcon },
+    { label: 'Age', text: '35', Icon: CalendarIcon },
+    { label: 'Nationality', text: 'United States', Icon: FlagIcon },
+    { label: 'Interests', text: 'Football,  Hiking', Icon: SparklesIcon },
+    { label: 'Study', text: 'University of Texas at Dallas', Icon: AcademicCapIcon },
+    { label: 'Employment', text: 'Self-Employed', Icon: BuildingOffice2Icon },
   ],
 };
 
@@ -198,39 +201,111 @@ export const skills: SkillGroup[] = [
  */
 export const portfolioItems: PortfolioItem[] = [
   {
-    title: 'Aimeos (E-commerce Platform)',
-    description:
-      'Developed a fully responsive e-commerce web application using Laravel (backend) and Vue.js (frontend). Integrated Stripe for secure payments, dynamic product filtering, a real-time inventory system, and admin dashboard with role-based access. Fixed over 100+ reported bugs during launch and implemented logging and analytics for continuous monitoring.',
-    url: 'https://aimeos.org/',
+    title: 'Canvas LMS – Student Dashboard',
+    summary:
+      'Built a student-focused dashboard experience for an LMS platform, improving visibility into courses, deadlines, and academic workload.',
+    bullets: [
+      'Designed course-based dashboard with real-time task tracking.',
+      'Implemented assignment and notification prioritization.',
+      'Improved usability for high-frequency student workflows.',
+    ],
+    skills: ['React', 'Node.js', 'TypeScript', 'Material UI', "AWS"],
+    url: 'https://canvas.instructure.com/',
     image: porfolioImage1,
   },
   {
-    title: 'InsightTrack (Business Dashboard App)',
-    description:
-      'Built a custom analytics dashboard for a mid-sized logistics company. Used React, Chart.js, and Node.js to create interactive data visualizations and real-time metrics tracking. Focused on performance optimization and handled critical bug fixes post-deployment that improved load speed by 45%.',
-    url: 'https://insighttrack.com',
+    title: 'Bridge LMS – Employee Learning Dashboard',
+    summary:
+      'Developed a corporate learning dashboard focused on compliance training, skill tracking, and personalized learning paths.',
+    bullets: [
+      'Designed course-based dashboard with real-time task tracking.',
+      'Implemented assignment and notification prioritization.',
+      'Improved usability for high-frequency student workflows.',
+    ],
+    skills: ['React', 'Node.js', 'UI/UX', 'Ruby', 'Java', 'Angular'],
+    url: 'https://bridge.instructure.com',
     image: porfolioImage2,
   },
   {
-    title: ' FormGuard (Secure Form System)',
-    description:
-      'Designed a form submission platform for HR departments to securely collect employee data. Developed with Node.js, Express, and MongoDB, with built-in validation, CAPTCHA, and file upload support.Applied strong input sanitization to prevent XSS and injection attacks.',
-    url: 'https://tally.so',
+    title: 'IQVIA – Clinical Research Platform',
+    summary:
+      'Contributed to enterprise clinical research systems by building scalable front-end components for data-intensive workflows.',
+    bullets: [
+      'Developed complex data tables for clinical and trial data.',
+      'Improved performance and rendering for large datasets.',
+      'Collaborated across backend systems for seamless integration.',
+    ],
+    skills: ['React', 'Node.js', 'Zeplin'],
+    url: 'https://iqvia.com',
     image: porfolioImage3,
   },
   {
-    title: 'LearnPro (Online Learning Platform)',
-    description:
-      'Developed a custom e-learning platform where students could enroll in courses, watch videos, and complete quizzes. Built using Django and PostgreSQL on the backend, and React on the frontend. Integrated authentication, progress tracking, and a dashboard for instructors. Debugged numerous UI inconsistencies and optimized database queries for faster performance.',
-    url: 'https://learnprogroup.com',
+    title: 'IQVIA SmartSolve – Compliance Platform',
+    summary:
+      'Built scalable React components for a global compliance platform supporting regulatory, quality, and audit workflows.',
+    bullets: [
+      'Developed reusable UI components for RIM and eQMS modules',
+      'Migrated legacy interfaces to modern React architecture',
+      'Built complex data grids and workflow-driven interfaces',
+    ],
+    skills: ['React', 'Node.js', 'MongoDB', 'SalesForce'],
+    url: 'https://iqvia.com',
     image: porfolioImage4,
   },
   {
-    title: 'Chatio (Real-Time Messaging App)',
-    description:
-      'Created a real-time messaging platform for internal company use using Node.js, Socket.io, and Redis. Features included group chats, read receipts, typing indicators, and encrypted message storage. Diagnosed and resolved WebSocket connection drops in production under load.',
-    url: 'https://chatio.herokuapp.com/',
+    title: 'CodeLikePro – Programming Exercise Platform',
+    summary:
+      'A practice website for programming students where they create their own exercises, solve exercises from other programmers, and showcase their solutions.',
+    bullets: [
+      'Allows creating and solving programming exercises.',
+      'Showcases solutions from programmers.',
+      'Built for educational purposes.',
+    ],
+    skills: ['Next.js', 'TypeScript', 'Firebase'],
+    url: 'https://code-like-pro-next.vercel.app/',
+    githubUrl: 'https://github.com/sperez927/pro-coding',
     image: porfolioImage5,
+  },
+  {
+    title: 'Talent Syncro – Employee Management Platform',
+    summary:
+      'Talent Syncro is a platform for managing employee tasks, salaries, and roles with secure logins and different dashboards for Employees, HR, and Admin.',
+    bullets: [
+      'Manages tasks, salaries, and roles.',
+      'Secure logins with role-based dashboards.',
+      'Includes real-time updates and payment processing.',
+    ],
+    skills: ['React', 'Node.js', 'MongoDB'],
+    url: 'https://talent-syncro.web.app/',
+    githubUrl: 'https://github.com/sperez927/hr-talent-syncro-client',
+    image: porfolioImage6,
+  },
+  {
+    title: 'Camper: Your Ultimate Tour Travel Website',
+    summary:
+      'Camper: Your Ultimate Tour Travel Website Welcome to Camper, your go-to platform for discovering and booking your next adventure! Whether you are planning a weekend getaway or a world tour, Camper allows you to customize every aspect of your trip.',
+    bullets: [
+      'Explore Diverse Tours: Browse through a wide range of tours tailored to various interests and destinations.',
+      'Comprehensive Trip Planning: Plan your entire journey online by selecting: i.Your desired destination ii.Transportation options iii. Accommodations',
+      'Personalize Your Experience: Enhance your trip with optional activities and rental vehicles, ensuring a unique adventure every time.',
+    ],
+    skills: ['HTML', 'CSS', 'React'],
+    url: 'https://vedant1745.github.io/Camper-Travel-Website/',
+    githubUrl: 'https://github.com/sperez927/quick-demo-camper-travel',
+    image: porfolioImage7,
+  },
+  {
+    title: 'Aimeos (E-commerce Platform)',
+    summary:
+      'Developed a fully responsive e-commerce web application using Laravel (backend) and Vue.js (frontend).',
+    bullets: [
+      'Integrated Stripe for payments.',
+      'Dynamic product filtering and inventory.',
+      'Admin dashboard with role-based access.',
+    ],
+    skills: ['Laravel', 'Vue.js', 'MySQL'],
+    url: 'https://aimeos.org/',
+    image: porfolioImage8,
   },
 ];
 
@@ -338,7 +413,7 @@ export const testimonial: TestimonialSection = {
     },
     {
       name: 'Director of Enginner',
-      text: "Salvador Perez is one of the most dependable and skilled web developers I’ve worked with in my career. Their 10+ years of experience really shows — whether it's building responsive UIs, optimizing performance, or solving tricky backend issues, they get it done right and on time.",
+      text: "Salvador Perez is one of the most dependable and skilled web developers I’ve worked with in my career. Their 14+ years of experience really shows — whether it's building responsive UIs, optimizing performance, or solving tricky backend issues, they get it done right and on time.",
       // image: 'https://drive.google.com/file/d/15hKY0V4KfjOAZpZK5Eq6t8217p50bqKa/view?usp=sharing',
       image: reviewerImage2,
     },
@@ -364,6 +439,11 @@ export const contact: ContactSection = {
       text: 'salverez90@gmail.com',
       href: 'https://mail.google.com/mail/u/0/#sent?compose=new',
     },
+    {
+      type: ContactType.Phone,
+      text: '+1(432) 278-1267',
+      href: 'tel:+14322781267',
+    },
     // {
     //   type: ContactType.Location,
     //   text: ' Odessa Texas, US',
@@ -386,9 +466,9 @@ export const contact: ContactSection = {
  * Social items
  */
 export const socialLinks: Social[] = [
-  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/sperez927'},
-  {label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://stackoverflow.com/users/22875671/SmartDev'},
-  {label: 'Dev Community', Icon: DevCommunityIcon, href: 'https://dev.to/sperez927'},
-  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/salvador-perez-20470b20'},
-  {label: 'Twitter', Icon: TwitterIcon, href: 'https://x.com/salverez90'},
+  { label: 'Github', Icon: GithubIcon, href: 'https://github.com/sperez927' },
+  { label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://stackoverflow.com/users/22875671/SmartDev' },
+  { label: 'Dev Community', Icon: DevCommunityIcon, href: 'https://dev.to/sperez927' },
+  { label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/salvador-perez-20470b20' },
+  { label: 'Twitter', Icon: TwitterIcon, href: 'https://x.com/salverez90' },
 ];
