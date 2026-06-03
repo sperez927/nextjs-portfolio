@@ -113,12 +113,12 @@ enhance user experience and system intelligence. Expert at adapting quickly acro
 collaborating with cross-functional teams, and delivering high-impact results in both consulting
 and full-time roles`,
   aboutItems: [
-    { label: 'Location', text: 'Odessa, TX, 79762', Icon: MapIcon },
-    { label: 'Age', text: '35', Icon: CalendarIcon },
+    { label: 'Location', text: 'El Paso, TX, 79938', Icon: MapIcon },
+    { label: 'Age', text: '37', Icon: CalendarIcon },
     { label: 'Nationality', text: 'United States', Icon: FlagIcon },
     { label: 'Interests', text: 'Football,  Hiking', Icon: SparklesIcon },
     { label: 'Study', text: 'University of Texas at Dallas', Icon: AcademicCapIcon },
-    { label: 'Employment', text: 'Self-Employed', Icon: BuildingOffice2Icon },
+    { label: 'Employment', text: 'Looking for a Hire', Icon: BuildingOffice2Icon },
   ],
 };
 
@@ -326,7 +326,7 @@ export const education: TimelineItem[] = [
 
 export const experience: TimelineItem[] = [
   {
-    date: 'September 2021 - March 2026',
+    date: 'September 2021 - May 2026',
     location: 'BairesDev',
     title: 'Senior Full Stack Software Engineer',
     content: (
@@ -441,8 +441,8 @@ export const contact: ContactSection = {
     },
     {
       type: ContactType.Phone,
-      text: '+1(432) 278-1267',
-      href: 'tel:+14322781267',
+      text: '+1(432) 248-0094',
+      href: 'tel:+14322480094',
     },
     // {
     //   type: ContactType.Location,
